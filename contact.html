@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — NZ STUDIO CREATIVE</title>
+  <meta name="description" content="NZ STUDIO CREATIVE — Agence de solutions digitales et technologiques. Communication, marketing digital, cartographie agricole et traçabilité.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+<!-- NAVBAR — include in every page -->
+<nav class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html"><img src="img/logo.png" alt="NZ Studio Creative" class="navbar__logo"></a>
+    <button class="navbar__toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar__links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="ressources.html">Ressources</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li class="navbar__cta"><a href="devis.html" class="btn btn--primary btn--small">Demander un devis</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h1>Échangeons sur votre projet</h1>
+    <p>Nous sommes disponibles pour répondre à vos questions et étudier vos besoins.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.09.57.2 1.13.36 1.68.1.35.03.74-.25 1.02L8.09 7.56a16 16 0 006 6l1.13-1.13a2 2 0 011.02-.25c.55.16 1.11.27 1.68.36A2 2 0 0120 14.5h3a2 2 0 012 2z"/></svg></div>
+          <div><h3>Téléphone</h3><p>+237 694 633 010</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div><h3>WhatsApp</h3><p><a href="https://wa.me/237694633010" target="_blank">+237 694 633 010</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg></div>
+          <div><h3>E-mail</h3><p><!-- DEVELOPER: insert professional email here -->contact@nzstudiocreative.com</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h3>Localisation</h3><p>Yaoundé, Cameroun</p></div>
+        </div>
+
+        <!-- DEVELOPER: replace with Google Maps embed when address is finalized -->
+        <div class="map-placeholder">Carte Google Maps — à intégrer avec l'adresse définitive</div>
+      </div>
+
+      <div>
+        <h2>Envoyez-nous un message</h2>
+        <form class="form" action="#" method="POST" style="max-width:100%">
+          <div class="form__row">
+            <div class="form__group"><label for="c-nom">Nom et prénom</label><input type="text" id="c-nom" name="nom" required></div>
+            <div class="form__group"><label for="c-tel">Téléphone</label><input type="tel" id="c-tel" name="tel"></div>
+          </div>
+          <div class="form__group"><label for="c-email">E-mail</label><input type="email" id="c-email" name="email"></div>
+          <div class="form__group"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
+          <button type="submit" class="btn btn--primary" style="width:100%">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER — include in every page -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <img src="img/logo.png" alt="NZ Studio Creative" style="height:44px;margin-bottom:16px;filter:brightness(0) invert(1)">
+        <p>Agence de solutions digitales et technologiques. Nous accompagnons les organisations dans leur transformation numérique et leur visibilité.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <p>Téléphone : +237 694 633 010<br>WhatsApp : +237 694 633 010<br>Yaoundé, Cameroun</p>
+        <p style="margin-top:12px"><a href="devis.html" class="btn btn--cyan btn--small">Demander un devis</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      © 2026 NZ STUDIO CREATIVE. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT — include in every page -->
+<a href="https://wa.me/237694633010" target="_blank" class="wa-float" aria-label="Nous contacter sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+</a>
+
+<!-- JS — include before </body> in every page -->
+<script>
+  // Navbar scroll shadow
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
+  });
+  // Mobile menu toggle
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  // Close menu on link click (mobile)
+  document.querySelectorAll('.navbar__links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+</script>
+
+</body>
+</html>
