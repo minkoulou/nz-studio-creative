@@ -1,3 +1,5 @@
+<img src="img/hero.png"/>
+
 # NZ STUDIO CREATIVE — Site Web
 
 ## Structure du projet
