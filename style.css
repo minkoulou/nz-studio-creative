@@ -25,6 +25,91 @@
   --gap: 24px;
 }
 
+/*
+   --animate-fad-up:fad-up 0.7s ease-in-out both;
+    --animate-fad-left:fad-left 0.7s ease-in-out both
+}
+
+
+ @keyframes fad-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fad-left {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+
+.animate{
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+*/
+
+ .fad-up{
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 1;
+ }
+
+ @keyframes appear {
+
+    from{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity:1;
+    }
+    
+ } 
+
+
+ .fad-left {
+  opacity: 0; 
+  transform: translateX(-40px);  
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+ .fad-left.visible {
+  opacity: 1; 
+  transform: translateX(0);  
+}
+
+ .fad-right {
+  opacity: 0; 
+  transform: translateX(-40px);  
+  transition: opacity 0.1s ease, transform 0.6s ease;
+}
+
+ .fad-right.visible {
+  opacity: 1; 
+  transform: translateX(0);  
+}
+
+
+
+ .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
