@@ -315,3 +315,6 @@ p + p, p + ul, ul + p { margin-top: 12px; }
 .form__status--ok { color: var(--turq); }
 .form__status--err { color: #D64545; }
 .form button[disabled] { opacity: .7; cursor: not-allowed; }
+
+/* --- Certifications --- */
+.certifications__img { max-width: 100%; width: 900px; height: auto; margin: 24px auto 0; border-radius: 8px; }
