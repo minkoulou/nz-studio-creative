@@ -67,7 +67,7 @@ document.querySelectorAll('form[data-subject]').forEach((form)=>{
             status.textContent="L'envoi a échoué. Réessayez ou écrivez-nous sur WhatsApp."
          }finally{
             btn.disabled=false;
-            btn.textContent='btnLabel';
+            btn.textContent=btnLabel;
          }
 
     })
