@@ -175,6 +175,11 @@ p + p, p + ul, ul + p { margin-top: 12px; }
 .hero__buttons { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero__corner { position: absolute; right: 0; bottom: 0; width: 180px; height: 135px; }
 
+/* logo sur la hero section */
+.hero__inner { display: flex; align-items: center; justify-content: space-between; gap: 48px; width: 100%; }
+.hero__logo { position: relative; z-index: 1; flex: 0 0 auto; padding: 28px; }
+.hero__logo img { display: block; width: clamp(260px, 32vw, 420px); height: auto; }
+
 /* --- Grid cards --- */
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
@@ -295,6 +300,7 @@ p + p, p + ul, ul + p { margin-top: 12px; }
   .navbar__toggle { display: block; }
   .navbar__cta { display: none; }
   .hero__content h1 { font-size: 1.8rem; }
+  .hero__logo { display: none; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr; }
   .form__row { grid-template-columns: 1fr; }
@@ -302,3 +308,10 @@ p + p, p + ul, ul + p { margin-top: 12px; }
   .hero__buttons { flex-direction: column; }
   .section { padding: 48px 0; }
 }
+
+/* Statut d'envoi des formulaires */
+.form__status { margin-top: 12px; font-size: .9rem; font-weight: 600; text-align: center; }
+.form__status:empty { display: none; }
+.form__status--ok { color: var(--turq); }
+.form__status--err { color: #D64545; }
+.form button[disabled] { opacity: .7; cursor: not-allowed; }

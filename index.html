@@ -32,7 +32,16 @@
 <section class="hero">
   <div class="hero__bg"></div>
   <div class="hero__pixels"></div>
-  <div class="container">
+  <div class="container hero__inner">
+
+    <!-- logo -->
+     
+    <div class="hero__logo fad-up">
+      <img src="img/logo-transparent.png" alt="NZ Studio Creative">
+    </div>
+
+    <!-- text et boutons du hero section -->
+     
     <div class="hero__content">
       <p class="section-label fad-up">NZ Studio Creative</p>
       <h1 class="fad-up">Donnons plus de visibilité à vos projets.</h1>
@@ -42,6 +51,7 @@
         <a href="./pages/devis.html" class="btn btn--outline fad-up" style="border-color:rgba(255,255,255,.4);color:#fff">Demander un devis</a>
       </div>
     </div>
+  
   </div>
   <svg class="hero__corner" viewBox="0 0 180 135" preserveAspectRatio="none"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0875D8"/><stop offset="1" stop-color="#071C91"/></linearGradient></defs><polygon points="180,0 180,135 40,135" fill="url(#hg)"/><polygon points="95,42 110,25 28,135 0,135" fill="#00A8E0"/></svg>
 </section>
@@ -164,12 +174,13 @@
         <p style="color:rgba(255,255,255,.8);margin-bottom:20px">Décrivez votre besoin en quelques lignes. Nous vous répondons sous 24 heures avec une proposition adaptée, sans engagement.</p>
         <p style="color:rgba(255,255,255,.6);font-size:.9rem">Vous préférez en parler directement ?<br><a href="https://wa.me/237694633010" target="_blank" style="color:var(--cyan);font-weight:600">Échangeons sur WhatsApp</a></p>
       </div>
-      <form class="form reveal" action="#" method="POST">
+      <form class="form reveal" data-subject="Nouvelle demande de devis (accueil) — NZ STUDIO CREATIVE">
         <div class="form__row">
           <div class="form__group"><label for="nom">Nom et prénom</label><input type="text" id="nom" name="nom" placeholder="Votre nom" required></div>
           <div class="form__group"><label for="tel">Téléphone</label><input type="tel" id="tel" name="tel" placeholder="+237 ..." required></div>
         </div>
         <div class="form__group"><label for="org">Coopérative / organisation</label><input type="text" id="org" name="org" placeholder="Nom de votre organisation"></div>
+        <div class="form__group"><label for="email">E-mail</label><input type="email" id="email" name="email" placeholder="vous@exemple.com"></div>
         <div class="form__group"><label for="service">Service souhaité</label>
           <select id="service" name="service" required>
             <option value="">Choisir un service</option>
@@ -196,8 +207,8 @@
         <p>Agence de solutions digitales et technologiques. Nous accompagnons les organisations dans leur transformation numérique et leur visibilité.</p>
         <div class="footer__social">
           <a href="https://www.facebook.com/profile.php?id=61596868254224" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+          <a href="https://www.linkedin.com/company/nzstudiocreative/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg></a>
+          <a href="https://www.instagram.com/nzstudio237/" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
         </div>
       </div>
       <div class="footer__col">
@@ -213,7 +224,7 @@
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
-        <p>Téléphone : +237 672 20 38 14<br>WhatsApp :  +237 672 20 38 14 <br>Yaoundé, Cameroun</p>
+        <p>Téléphone : +237 672 20 38 14<br>WhatsApp : <a href="https://wa.me/237672203814"> +237 672 20 38 14 </a> <br>Yaoundé, Cameroun</p>
         <p style="margin-top:12px"><a href="./pages/devis.html" class="btn btn--cyan btn--small">Demander un devis</a></p>
       </div>
     </div>
@@ -259,5 +270,6 @@
   document.querySelectorAll(" .fad-right").forEach((el)=>observer.observe(el));
 </script>
 
+<script src="./emailService/form.js"></script>
 </body>
 </html>
