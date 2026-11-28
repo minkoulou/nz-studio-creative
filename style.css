@@ -221,6 +221,25 @@ p + p, p + ul, ul + p { margin-top: 12px; }
 .real-card__img { border-radius: 8px; width: 100%; height: 300px; object-fit: cover; }
 .real-card__links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
 
+/* bloc-container du bloc dans la page service marketing avec le logo en flex */
+
+.bloc-container{
+  display: flex;
+}
+
+
+  .bloc-container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 150px;
+}
+
+  .bloc-container1{
+  flex-grow: 3;
+}
+
 /* --- Form --- */
 .form { max-width: 600px; }
 .form__group { margin-bottom: 16px; }
@@ -292,7 +311,10 @@ p + p, p + ul, ul + p { margin-top: 12px; }
   .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: 1fr 1fr; }
   .real-card { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr;}
+  .bloc-container2{
+  margin-left: 50px;
+}
 }
 @media (max-width: 768px) {
   .navbar__links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--white); padding: 20px var(--gap); border-bottom: 1px solid var(--line); gap: 16px; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
@@ -307,6 +329,13 @@ p + p, p + ul, ul + p { margin-top: 12px; }
   .btn + .btn { margin-left: 0; margin-top: 8px; }
   .hero__buttons { flex-direction: column; }
   .section { padding: 48px 0; }
+
+  .bloc-container2{
+  display: none;
+  justify-content: center;
+}
+
+
 }
 
 /* Statut d'envoi des formulaires */
